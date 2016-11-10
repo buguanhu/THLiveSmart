@@ -1,0 +1,2 @@
+# THLiveSmart
+一个实现简单的推流拉流的demo THLiveViewController是直播控制器，THWatchViewController是观看控制器，本项目拉流是用IJKMediaFramework的三方，推流使用的是LFLiveKit。打开文件会显示缺少IJKMediaFramework，请去这里下载https://pan.baidu.com/s/1boVXrrh
