@@ -1,0 +1,18 @@
+PODS:
+  - LFLiveKit (2.3)
+  - ReactiveCocoa (4.2.2):
+    - Result (~> 2.0)
+  - Result (2.1.3)
+
+DEPENDENCIES:
+  - LFLiveKit
+  - ReactiveCocoa
+
+SPEC CHECKSUMS:
+  LFLiveKit: 76a5cb34509f8cbe25e3a95824cf80f36d36679b
+  ReactiveCocoa: 72263e7ac0770c274617ccd345e01049d0ca38ae
+  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
+
+PODFILE CHECKSUM: 3c2921202538db3bf5afa655ae03a3bf977ec4e2
+
+COCOAPODS: 1.0.1

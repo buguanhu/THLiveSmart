@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27ABCE3E8164B2C9858EFD47 /* Pods_______demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDF97239EFDD21DF7B37E5 /* Pods_______demo.framework */; };
+		F3F4B8EE1DD2F6A90001581B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B8ED1DD2F6A90001581B /* main.m */; };
+		F3F4B8F11DD2F6A90001581B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B8F01DD2F6A90001581B /* AppDelegate.m */; };
+		F3F4B8F41DD2F6A90001581B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B8F31DD2F6A90001581B /* ViewController.m */; };
+		F3F4B8F71DD2F6A90001581B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F4B8F51DD2F6A90001581B /* Main.storyboard */; };
+		F3F4B8F91DD2F6A90001581B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F4B8F81DD2F6A90001581B /* Assets.xcassets */; };
+		F3F4B8FC1DD2F6A90001581B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F4B8FA1DD2F6A90001581B /* LaunchScreen.storyboard */; };
+		F3F4B9071DD2F6A90001581B /* ______demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B9061DD2F6A90001581B /* ______demoTests.m */; };
+		F3F4B9121DD2F6A90001581B /* ______demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B9111DD2F6A90001581B /* ______demoUITests.m */; };
+		F3F4B9211DD2F8000001581B /* THWatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B9201DD2F8000001581B /* THWatchViewController.m */; };
+		F3F4B9241DD2F81A0001581B /* THLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B9231DD2F81A0001581B /* THLiveViewController.m */; };
+		F3F4B9291DD2FF870001581B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F4B9281DD2FF870001581B /* AVFoundation.framework */; };
+		F3F4B92B1DD2FF8F0001581B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F4B92A1DD2FF8F0001581B /* MediaPlayer.framework */; };
+		F3F4B92D1DD2FFAC0001581B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F4B92C1DD2FFAC0001581B /* libz.tbd */; };
+		F3F4B92F1DD2FFB60001581B /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F4B92E1DD2FFB60001581B /* libbz2.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3F4B9031DD2F6A90001581B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F4B8E11DD2F6A90001581B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3F4B8E81DD2F6A90001581B;
+			remoteInfo = "简单的直播小demo";
+		};
+		F3F4B90E1DD2F6A90001581B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F4B8E11DD2F6A90001581B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3F4B8E81DD2F6A90001581B;
+			remoteInfo = "简单的直播小demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F9E21ECEA361D18727F23EB /* Pods-简单的直播小demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-简单的直播小demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-简单的直播小demo/Pods-简单的直播小demo.release.xcconfig"; sourceTree = "<group>"; };
+		8FBDF97239EFDD21DF7B37E5 /* Pods_______demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F32B7BF09B8165259928E814 /* Pods-简单的直播小demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-简单的直播小demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-简单的直播小demo/Pods-简单的直播小demo.debug.xcconfig"; sourceTree = "<group>"; };
+		F3F4B8E91DD2F6A90001581B /* 简单的直播小demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "简单的直播小demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F4B8ED1DD2F6A90001581B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3F4B8EF1DD2F6A90001581B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3F4B8F01DD2F6A90001581B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3F4B8F21DD2F6A90001581B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3F4B8F31DD2F6A90001581B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3F4B8F61DD2F6A90001581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3F4B8F81DD2F6A90001581B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3F4B8FB1DD2F6A90001581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3F4B8FD1DD2F6A90001581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F4B9021DD2F6A90001581B /* 简单的直播小demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "简单的直播小demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F4B9061DD2F6A90001581B /* ______demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______demoTests.m"; sourceTree = "<group>"; };
+		F3F4B9081DD2F6A90001581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F4B90D1DD2F6A90001581B /* 简单的直播小demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "简单的直播小demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F4B9111DD2F6A90001581B /* ______demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______demoUITests.m"; sourceTree = "<group>"; };
+		F3F4B9131DD2F6A90001581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F4B91F1DD2F8000001581B /* THWatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THWatchViewController.h; sourceTree = "<group>"; };
+		F3F4B9201DD2F8000001581B /* THWatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THWatchViewController.m; sourceTree = "<group>"; };
+		F3F4B9221DD2F81A0001581B /* THLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLiveViewController.h; sourceTree = "<group>"; };
+		F3F4B9231DD2F81A0001581B /* THLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLiveViewController.m; sourceTree = "<group>"; };
+		F3F4B9251DD2FB790001581B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F3F4B9281DD2FF870001581B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F3F4B92A1DD2FF8F0001581B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		F3F4B92C1DD2FFAC0001581B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F3F4B92E1DD2FFB60001581B /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3F4B8E61DD2F6A90001581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F4B92F1DD2FFB60001581B /* libbz2.tbd in Frameworks */,
+				F3F4B92D1DD2FFAC0001581B /* libz.tbd in Frameworks */,
+				F3F4B92B1DD2FF8F0001581B /* MediaPlayer.framework in Frameworks */,
+				F3F4B9291DD2FF870001581B /* AVFoundation.framework in Frameworks */,
+				27ABCE3E8164B2C9858EFD47 /* Pods_______demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F4B8FF1DD2F6A90001581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F4B90A1DD2F6A90001581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA3DDF86051B9D8F072DF20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4B92E1DD2FFB60001581B /* libbz2.tbd */,
+				F3F4B92C1DD2FFAC0001581B /* libz.tbd */,
+				F3F4B92A1DD2FF8F0001581B /* MediaPlayer.framework */,
+				F3F4B9281DD2FF870001581B /* AVFoundation.framework */,
+				8FBDF97239EFDD21DF7B37E5 /* Pods_______demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48D0D209D22DF820590B8233 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F32B7BF09B8165259928E814 /* Pods-简单的直播小demo.debug.xcconfig */,
+				3F9E21ECEA361D18727F23EB /* Pods-简单的直播小demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3F4B8E01DD2F6A90001581B = {
+			isa = PBXGroup;
+			children = (
+				F3F4B8EB1DD2F6A90001581B /* 简单的直播小demo */,
+				F3F4B9051DD2F6A90001581B /* 简单的直播小demoTests */,
+				F3F4B9101DD2F6A90001581B /* 简单的直播小demoUITests */,
+				F3F4B8EA1DD2F6A90001581B /* Products */,
+				48D0D209D22DF820590B8233 /* Pods */,
+				1BA3DDF86051B9D8F072DF20 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3F4B8EA1DD2F6A90001581B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4B8E91DD2F6A90001581B /* 简单的直播小demo.app */,
+				F3F4B9021DD2F6A90001581B /* 简单的直播小demoTests.xctest */,
+				F3F4B90D1DD2F6A90001581B /* 简单的直播小demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3F4B8EB1DD2F6A90001581B /* 简单的直播小demo */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4B8EF1DD2F6A90001581B /* AppDelegate.h */,
+				F3F4B8F01DD2F6A90001581B /* AppDelegate.m */,
+				F3F4B8F21DD2F6A90001581B /* ViewController.h */,
+				F3F4B8F31DD2F6A90001581B /* ViewController.m */,
+				F3F4B8F51DD2F6A90001581B /* Main.storyboard */,
+				F3F4B8F81DD2F6A90001581B /* Assets.xcassets */,
+				F3F4B8FA1DD2F6A90001581B /* LaunchScreen.storyboard */,
+				F3F4B8FD1DD2F6A90001581B /* Info.plist */,
+				F3F4B8EC1DD2F6A90001581B /* Supporting Files */,
+				F3F4B91F1DD2F8000001581B /* THWatchViewController.h */,
+				F3F4B9201DD2F8000001581B /* THWatchViewController.m */,
+				F3F4B9221DD2F81A0001581B /* THLiveViewController.h */,
+				F3F4B9231DD2F81A0001581B /* THLiveViewController.m */,
+			);
+			path = "简单的直播小demo";
+			sourceTree = "<group>";
+		};
+		F3F4B8EC1DD2F6A90001581B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4B8ED1DD2F6A90001581B /* main.m */,
+				F3F4B9251DD2FB790001581B /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3F4B9051DD2F6A90001581B /* 简单的直播小demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4B9061DD2F6A90001581B /* ______demoTests.m */,
+				F3F4B9081DD2F6A90001581B /* Info.plist */,
+			);
+			path = "简单的直播小demoTests";
+			sourceTree = "<group>";
+		};
+		F3F4B9101DD2F6A90001581B /* 简单的直播小demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F4B9111DD2F6A90001581B /* ______demoUITests.m */,
+				F3F4B9131DD2F6A90001581B /* Info.plist */,
+			);
+			path = "简单的直播小demoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3F4B8E81DD2F6A90001581B /* 简单的直播小demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F4B9161DD2F6A90001581B /* Build configuration list for PBXNativeTarget "简单的直播小demo" */;
+			buildPhases = (
+				93009CD1B27D46E594D9A1DE /* [CP] Check Pods Manifest.lock */,
+				F3F4B8E51DD2F6A90001581B /* Sources */,
+				F3F4B8E61DD2F6A90001581B /* Frameworks */,
+				F3F4B8E71DD2F6A90001581B /* Resources */,
+				AC046AD6526859A68887E753 /* [CP] Embed Pods Frameworks */,
+				73128044986DF9A903BC0B34 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "简单的直播小demo";
+			productName = "简单的直播小demo";
+			productReference = F3F4B8E91DD2F6A90001581B /* 简单的直播小demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3F4B9011DD2F6A90001581B /* 简单的直播小demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F4B9191DD2F6A90001581B /* Build configuration list for PBXNativeTarget "简单的直播小demoTests" */;
+			buildPhases = (
+				F3F4B8FE1DD2F6A90001581B /* Sources */,
+				F3F4B8FF1DD2F6A90001581B /* Frameworks */,
+				F3F4B9001DD2F6A90001581B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3F4B9041DD2F6A90001581B /* PBXTargetDependency */,
+			);
+			name = "简单的直播小demoTests";
+			productName = "简单的直播小demoTests";
+			productReference = F3F4B9021DD2F6A90001581B /* 简单的直播小demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3F4B90C1DD2F6A90001581B /* 简单的直播小demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F4B91C1DD2F6A90001581B /* Build configuration list for PBXNativeTarget "简单的直播小demoUITests" */;
+			buildPhases = (
+				F3F4B9091DD2F6A90001581B /* Sources */,
+				F3F4B90A1DD2F6A90001581B /* Frameworks */,
+				F3F4B90B1DD2F6A90001581B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3F4B90F1DD2F6A90001581B /* PBXTargetDependency */,
+			);
+			name = "简单的直播小demoUITests";
+			productName = "简单的直播小demoUITests";
+			productReference = F3F4B90D1DD2F6A90001581B /* 简单的直播小demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3F4B8E11DD2F6A90001581B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = TH;
+				TargetAttributes = {
+					F3F4B8E81DD2F6A90001581B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = J5S54E274Q;
+						ProvisioningStyle = Automatic;
+					};
+					F3F4B9011DD2F6A90001581B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3F4B8E81DD2F6A90001581B;
+					};
+					F3F4B90C1DD2F6A90001581B = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3F4B8E81DD2F6A90001581B;
+					};
+				};
+			};
+			buildConfigurationList = F3F4B8E41DD2F6A90001581B /* Build configuration list for PBXProject "简单的直播小demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3F4B8E01DD2F6A90001581B;
+			productRefGroup = F3F4B8EA1DD2F6A90001581B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3F4B8E81DD2F6A90001581B /* 简单的直播小demo */,
+				F3F4B9011DD2F6A90001581B /* 简单的直播小demoTests */,
+				F3F4B90C1DD2F6A90001581B /* 简单的直播小demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3F4B8E71DD2F6A90001581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F4B8FC1DD2F6A90001581B /* LaunchScreen.storyboard in Resources */,
+				F3F4B8F91DD2F6A90001581B /* Assets.xcassets in Resources */,
+				F3F4B8F71DD2F6A90001581B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F4B9001DD2F6A90001581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F4B90B1DD2F6A90001581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73128044986DF9A903BC0B34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-简单的直播小demo/Pods-简单的直播小demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93009CD1B27D46E594D9A1DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC046AD6526859A68887E753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-简单的直播小demo/Pods-简单的直播小demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3F4B8E51DD2F6A90001581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F4B9211DD2F8000001581B /* THWatchViewController.m in Sources */,
+				F3F4B8F41DD2F6A90001581B /* ViewController.m in Sources */,
+				F3F4B8F11DD2F6A90001581B /* AppDelegate.m in Sources */,
+				F3F4B8EE1DD2F6A90001581B /* main.m in Sources */,
+				F3F4B9241DD2F81A0001581B /* THLiveViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F4B8FE1DD2F6A90001581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F4B9071DD2F6A90001581B /* ______demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F4B9091DD2F6A90001581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F4B9121DD2F6A90001581B /* ______demoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3F4B9041DD2F6A90001581B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3F4B8E81DD2F6A90001581B /* 简单的直播小demo */;
+			targetProxy = F3F4B9031DD2F6A90001581B /* PBXContainerItemProxy */;
+		};
+		F3F4B90F1DD2F6A90001581B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3F4B8E81DD2F6A90001581B /* 简单的直播小demo */;
+			targetProxy = F3F4B90E1DD2F6A90001581B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3F4B8F51DD2F6A90001581B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F4B8F61DD2F6A90001581B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3F4B8FA1DD2F6A90001581B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F4B8FB1DD2F6A90001581B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3F4B9141DD2F6A90001581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3F4B9151DD2F6A90001581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3F4B9171DD2F6A90001581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F32B7BF09B8165259928E814 /* Pods-简单的直播小demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5S54E274Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/简单的直播小demo",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/简单的直播小demo/PrefixHeader.pch";
+				INFOPLIST_FILE = "简单的直播小demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TH.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F3F4B9181DD2F6A90001581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9E21ECEA361D18727F23EB /* Pods-简单的直播小demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5S54E274Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/简单的直播小demo",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/简单的直播小demo/PrefixHeader.pch";
+				INFOPLIST_FILE = "简单的直播小demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TH.---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F3F4B91A1DD2F6A90001581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "简单的直播小demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TH.------demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/简单的直播小demo.app/简单的直播小demo";
+			};
+			name = Debug;
+		};
+		F3F4B91B1DD2F6A90001581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "简单的直播小demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TH.------demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/简单的直播小demo.app/简单的直播小demo";
+			};
+			name = Release;
+		};
+		F3F4B91D1DD2F6A90001581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "简单的直播小demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TH.------demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "简单的直播小demo";
+			};
+			name = Debug;
+		};
+		F3F4B91E1DD2F6A90001581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "简单的直播小demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TH.------demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "简单的直播小demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3F4B8E41DD2F6A90001581B /* Build configuration list for PBXProject "简单的直播小demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F4B9141DD2F6A90001581B /* Debug */,
+				F3F4B9151DD2F6A90001581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F4B9161DD2F6A90001581B /* Build configuration list for PBXNativeTarget "简单的直播小demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F4B9171DD2F6A90001581B /* Debug */,
+				F3F4B9181DD2F6A90001581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F4B9191DD2F6A90001581B /* Build configuration list for PBXNativeTarget "简单的直播小demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F4B91A1DD2F6A90001581B /* Debug */,
+				F3F4B91B1DD2F6A90001581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F4B91C1DD2F6A90001581B /* Build configuration list for PBXNativeTarget "简单的直播小demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F4B91D1DD2F6A90001581B /* Debug */,
+				F3F4B91E1DD2F6A90001581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3F4B8E11DD2F6A90001581B /* Project object */;
+}
