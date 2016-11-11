@@ -22,16 +22,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-bs-mH8">
-                                <rect key="frame" x="74" y="101" width="240" height="316"/>
+                                <rect key="frame" x="74" y="101" width="277" height="362"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="327-O4-h0r">
                                         <rect key="frame" x="97" y="73" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGu-hB-M8m">
+                                        <rect key="frame" x="214" y="73" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3P-lg-bqA">
+                                        <rect key="frame" x="214" y="134" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.48721439409881373" green="1" blue="0.87078534465871826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="327-O4-h0r" firstAttribute="top" secondItem="dhr-bs-mH8" secondAttribute="top" constant="10" id="3iy-gA-7Cc"/>
+                                    <constraint firstItem="ZGu-hB-M8m" firstAttribute="centerY" secondItem="327-O4-h0r" secondAttribute="centerY" id="A3E-d6-LzQ"/>
+                                    <constraint firstItem="k3P-lg-bqA" firstAttribute="top" secondItem="ZGu-hB-M8m" secondAttribute="bottom" constant="20" id="JUp-2C-bFC"/>
+                                    <constraint firstAttribute="trailing" secondItem="k3P-lg-bqA" secondAttribute="trailing" constant="20" id="Qbs-YT-4AC"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZGu-hB-M8m" secondAttribute="trailing" constant="20" id="aWl-tc-kxp"/>
                                     <constraint firstItem="327-O4-h0r" firstAttribute="centerX" secondItem="dhr-bs-mH8" secondAttribute="centerX" id="wvo-2D-BH4"/>
                                 </constraints>
                             </view>
@@ -46,6 +58,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="直播" id="vMc-C3-V8P"/>
                     <connections>
+                        <outlet property="beautFace" destination="k3P-lg-bqA" id="BFG-O1-QT6"/>
+                        <outlet property="cameraPosition" destination="ZGu-hB-M8m" id="ZED-Ag-5Mm"/>
                         <outlet property="liveView" destination="dhr-bs-mH8" id="Ma3-4i-395"/>
                         <outlet property="playBtn" destination="327-O4-h0r" id="psq-LX-JJd"/>
                     </connections>

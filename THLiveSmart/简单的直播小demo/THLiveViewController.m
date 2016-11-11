@@ -13,6 +13,8 @@
 @interface THLiveViewController () <LFLiveSessionDelegate>
 @property (weak, nonatomic) IBOutlet UIView *liveView;
 @property (weak, nonatomic) IBOutlet UIButton *playBtn;
+@property (weak, nonatomic) IBOutlet UIButton *cameraPosition;
+@property (weak, nonatomic) IBOutlet UIButton *beautFace;
 @property (nonatomic,strong) LFLiveSession *session;
 @end
 
@@ -50,7 +52,15 @@
     LFLiveStreamInfo *streamInfo = [LFLiveStreamInfo new];
     streamInfo.url = @"rtmp://ams.studytv.cn/live/aaa";
     
+    
+    
     [self.playBtn setTitle:@"直播" forState:UIControlStateNormal];
+    
+     self.cameraPosition.hidden = YES;
+     [self.cameraPosition setTitle:@"后" forState:UIControlStateNormal];
+    
+    self.beautFace.hidden = YES;
+    [self.beautFace setTitle:@"普通" forState:UIControlStateNormal];
     
     [[self.playBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
       
@@ -61,16 +71,65 @@
           //  [self.session setRunning:NO];
             self.playBtn.selected = NO;
       
+       
+            self.cameraPosition.hidden = YES;
+            self.beautFace.hidden = YES;
         }else{
-        
             
             [self.playBtn setTitle:@"停止" forState:UIControlStateNormal];
           // [self.session setRunning:YES];
             [self.session startLive:streamInfo];
             
             self.playBtn.selected = YES;
-            
+             //直播才显示切换摄像头
+             self.cameraPosition.hidden = NO;
+            self.beautFace.hidden = NO;
         }
+        
+    }];
+    
+    //切换前后置摄像头
+    [[self.cameraPosition rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        
+        if (self.cameraPosition.selected == YES) {
+            
+            [self.cameraPosition setTitle:@"后" forState:UIControlStateNormal];
+         
+            self.session.captureDevicePosition = AVCaptureDevicePositionBack;
+            
+            self.cameraPosition.selected = NO;
+         
+        }else{
+        
+            [self.cameraPosition setTitle:@"前" forState:UIControlStateNormal];
+            
+            self.session.captureDevicePosition = AVCaptureDevicePositionUnspecified;
+
+             self.cameraPosition.selected = YES;
+        }
+        
+    }];
+    
+    //是否美颜
+    [[self.beautFace rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        
+        if (self.beautFace.selected == YES) {
+            
+            [self.beautFace setTitle:@"普通" forState:UIControlStateNormal];
+            
+            self.session.beautyFace = YES;
+            
+            self.beautFace.selected = NO;
+            
+        }else{
+            
+            [self.beautFace setTitle:@"美颜" forState:UIControlStateNormal];
+            
+            self.session.beautyFace = NO;
+            
+            self.beautFace.selected = YES;
+        }
+
         
     }];
     
@@ -100,7 +159,7 @@
         _session = [[LFLiveSession alloc] initWithAudioConfiguration:audioConfiguration videoConfiguration:videoConfiguration captureType:LFLiveCaptureMaskAll];
         
         _session.captureDevicePosition = AVCaptureDevicePositionBack;
-        
+        _session.beautyFace = YES;
         // 设置代理
         _session.delegate = self;
         _session.running = YES;

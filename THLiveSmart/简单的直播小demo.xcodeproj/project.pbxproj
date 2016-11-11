@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27ABCE3E8164B2C9858EFD47 /* Pods_______demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBDF97239EFDD21DF7B37E5 /* Pods_______demo.framework */; };
+		F3E6FD231DD408C70027A5B9 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E6FD221DD408C70027A5B9 /* IJKMediaFramework.framework */; };
 		F3F4B8EE1DD2F6A90001581B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B8ED1DD2F6A90001581B /* main.m */; };
 		F3F4B8F11DD2F6A90001581B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B8F01DD2F6A90001581B /* AppDelegate.m */; };
 		F3F4B8F41DD2F6A90001581B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F4B8F31DD2F6A90001581B /* ViewController.m */; };
@@ -45,6 +46,7 @@
 		3F9E21ECEA361D18727F23EB /* Pods-简单的直播小demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-简单的直播小demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-简单的直播小demo/Pods-简单的直播小demo.release.xcconfig"; sourceTree = "<group>"; };
 		8FBDF97239EFDD21DF7B37E5 /* Pods_______demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_______demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32B7BF09B8165259928E814 /* Pods-简单的直播小demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-简单的直播小demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-简单的直播小demo/Pods-简单的直播小demo.debug.xcconfig"; sourceTree = "<group>"; };
+		F3E6FD221DD408C70027A5B9 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		F3F4B8E91DD2F6A90001581B /* 简单的直播小demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "简单的直播小demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F4B8ED1DD2F6A90001581B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3F4B8EF1DD2F6A90001581B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				F3F4B92F1DD2FFB60001581B /* libbz2.tbd in Frameworks */,
 				F3F4B92D1DD2FFAC0001581B /* libz.tbd in Frameworks */,
 				F3F4B92B1DD2FF8F0001581B /* MediaPlayer.framework in Frameworks */,
+				F3E6FD231DD408C70027A5B9 /* IJKMediaFramework.framework in Frameworks */,
 				F3F4B9291DD2FF870001581B /* AVFoundation.framework in Frameworks */,
 				27ABCE3E8164B2C9858EFD47 /* Pods_______demo.framework in Frameworks */,
 			);
@@ -148,6 +151,7 @@
 		F3F4B8EB1DD2F6A90001581B /* 简单的直播小demo */ = {
 			isa = PBXGroup;
 			children = (
+				F3E6FD221DD408C70027A5B9 /* IJKMediaFramework.framework */,
 				F3F4B8EF1DD2F6A90001581B /* AppDelegate.h */,
 				F3F4B8F01DD2F6A90001581B /* AppDelegate.m */,
 				F3F4B8F21DD2F6A90001581B /* ViewController.h */,
